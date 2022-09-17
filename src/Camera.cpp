@@ -52,19 +52,9 @@ namespace Raytracer
 				vec3 pixel_pos(pixel_x, pixel_y, pixel_z);
 				vec3 ray_dir = pixel_pos - pos;
 				Ray ray(pos, ray_dir);
-				//sf::Color pixel_color = sf::Color::White;
 				sf::Color pixel_color = ray.Trace(geometry);
-				//std::cout << "color: " << (int)pixel_color.g << std::endl;
-				//*(pixels + (y * x)) = pixel_color;
-
-				/*if ((pixels + (y * x))->g > 0)
-				{
-					std::cout << (int) (pixels + (y * x))->g << std::endl;
-				}*/
-				//SetPixelColor(&scene_image.data + (y * x * sizeof(Color)), pixel_color, PIXELFORMAT_UNCOMPRESSED_R8G8B8A8);
 				scene_image.setPixel(x, canvas_y, pixel_color);
 			}
-			//std::cout << y << std::endl;
 		}
 
 		std::cout << "Render done!" << std::endl << "Time: " << renderTimer.Time_str() << std::endl;

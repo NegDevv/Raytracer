@@ -8,7 +8,7 @@ Simple raytracer application that can render spheres in the scene and do simple 
 # Instructions
 Ready to go statically linked Windows binary is available in the [bin](bin/) folder.
 
-Pressing Enter re-renders the scene.
+Use arrowkeys to move the light around (will intiate scene re-render)
 
 ## Compiling the project yourself
 The Visual Studio Project uses statically linked SFML 2.5.1 (64-bit) libraries and the SFML 2.5.1 (64-bit) include directory.
