@@ -6,7 +6,7 @@ Simple raytracer application that can render spheres in the scene and do simple 
 
 
 # Instructions
-**Ready to go statically linked Windows binary is available in the [bin](bin/) folder.**
+**Ready to go statically linked Windows executable is available in the [bin](bin/) folder.**
 
 Use arrowkeys to move the light around (will initiate scene re-render).
 
